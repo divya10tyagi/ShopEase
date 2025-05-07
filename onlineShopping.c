@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
+int total = 0, shop_choice, item_choice, item, shop_id, n, ch, confirm;
 
 FILE *abt;
 struct details { // Structure declared for storing details
