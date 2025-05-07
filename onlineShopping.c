@@ -885,3 +885,32 @@ void cart()
         cart();
     }
 }
+
+int main() {
+    int choice;
+
+    while (1) {
+        printf("\n=== Welcome to the Shopping Application ===\n");
+        printf("1) Shop by Store\n");
+        printf("2) Shop by Items\n");
+        printf("3) Exit\n");
+        printf("Please enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                shop();
+                break;
+            case 2:
+                items();
+                break;
+            case 3:
+                printf("Thank you for visiting. Goodbye!\n");
+                exit(0);
+            default:
+                printf("Invalid choice. Please try again.\n");
+        }
+    }
+
+    return 0;
+}
